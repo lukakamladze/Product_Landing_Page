@@ -1,1 +1,58 @@
-<h1>Product Landing Page</h1>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+      .flex-container {
+        display: inline-flex;
+        background-color: #ff6700;
+      }
+
+      .flex-container > div {
+        background-color: #f1f1f1;
+        margin: 50px;
+        padding: 150px;
+        font-size: 30px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title>Xiaomi redmi note 9</title>
+  </head>
+  <body>
+    <header id="header">
+
+      <nav id="nav-bar">
+        <a class="nav-link" href="#email">Your Email</a>
+        <a class="nav-link" href="#check_spec">Check Specifications</a>
+        <a class="nav-link" href="#shop_here">Shop Here</a>
+      </nav>
+
+      <img id="header-img" src="https://www.freepnglogos.com/uploads/xiaomi-png/xiaomi-logo-logos-marcas-8.png" alt="Xiaomi Logo">
+
+
+      <iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/oen5JjB6jmg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <center>
+      <h2>Enter Your Email here</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input type="email"  name="email" id="email" placeholder="Your Email Adress">
+        <input type="submit" name="submit" id="submit">
+      </form>
+      </center>
+
+      <div class="flex-container">
+        <div id="check_spec"><a href="#">Check Specifications</a></div>
+        <div id="shop_here"><a href="#">Shop here</a></div>
+      </div>
+
+    </header>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"" charset="utf-8"></script>
+  </body>
+</html>
